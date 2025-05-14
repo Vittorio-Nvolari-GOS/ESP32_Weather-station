@@ -1,0 +1,148 @@
+/* Stili Base e Reset */
+body {
+    margin: 0; /* Rimuove il margine predefinito del body */
+    padding: 0; /* Rimuove il padding predefinito */
+    font-family: sans-serif; /* Esempio: definisce un font di base */
+    line-height: 1.6; /* Esempio: migliora la leggibilità del testo */
+    color: #333; /* Esempio: colore del testo di base */
+    display: flex; /* Abilita Flexbox per il body */
+    flex-direction: column; /* Organizza i figli in colonna */
+    align-items: center; /* Centra gli elementi figli orizzontalmente (se non occupano tutta la larghezza) */
+    min-height: 100vh; /* Assicura che il body occupi almeno l'intera altezza della viewport */
+}
+
+/* Stili per l'Header del Sito */
+.site-header {
+    width: 100%;
+    /* Altri stili per l'header, es. background-color */
+    background-color: #f0f0f0; /* Esempio */
+    padding: 20px 0; /* Spazio interno sopra e sotto */
+    text-align: center; /* Centra il contenuto dell'header */
+}
+
+.header-banner {
+    /* Contenitore interno se necessario, es. per limitare larghezza */
+    max-width: 960px; /* Larghezza massima esempio */
+    margin: 0 auto; /* Centra il banner all'interno dell'header */
+    padding: 0 20px; /* Padding interno per non far toccare il contenuto ai bordi su schermi piccoli */
+}
+
+.site-title {
+    margin: 0; /* Rimuove margine predefinito dell'h1 */
+    font-size: 2.5em; /* Dimensione titolo */
+    color: #0056b3; /* Esempio di colore */
+}
+
+/* Stili per la Barra di Navigazione */
+.navbar {
+    width: 100%;
+    background-color: #007bff; /* Colore di sfondo della navbar */
+    padding: 10px 0; /* Spazio interno sopra e sotto */
+    text-align: center; /* Centra i link */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombra leggera */
+    margin-bottom: 20px; /* Spazio sotto la navbar */
+}
+
+.navbar a {
+    color: white; /* Colore del testo dei link (spostato dall'HTML) */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    font-weight: bold; /* Rende il testo in grassetto (sostituisce <b>) */
+    margin: 0 15px; /* Spazio orizzontale tra i link */
+    display: inline-block; /* Permette l'applicazione dei margini orizzontali */
+    padding: 5px 0; /* Padding verticale per area cliccabile */
+    transition: color 0.3s ease; /* Animazione al passaggio del mouse */
+}
+
+.navbar a:hover {
+    color: #cccccc; /* Cambia colore al passaggio del mouse */
+}
+
+/* Stili per il Contenuto Principale */
+.main-content {
+    flex-grow: 1; /* Permette al contenuto principale di espandersi e occupare lo spazio rimanente */
+    max-width: 960px; /* Larghezza massima per il contenuto */
+    margin: 20px auto; /* Centra il blocco del contenuto e aggiunge margini sopra/sotto */
+    padding: 0 20px; /* Padding interno */
+    width: 100%; /* Occupa tutta la larghezza disponibile fino al max-width */
+    box-sizing: border-box; /* Include padding e border nella larghezza totale */
+}
+
+/* Stili per il Link e Logo GitHub */
+.github-link {
+    display: inline-block; /* Permette margini e centraggio se in un blocco text-align: center */
+    margin: 30px auto; /* Margine sopra/sotto, auto per centrare (se in un blocco centrato) */
+    text-align: center; /* Centra l'immagine all'interno del link se l'immagine è display: block */
+    width: 100%; /* Può aiutare con il centraggio in alcuni contesti flex/grid */
+}
+
+.github-logo {
+    display: block; /* L'immagine si comporta come un blocco */
+    max-width: 150px; /* Dimensione massima del logo */
+    height: auto; /* Mantiene le proporzioni */
+    margin: 0 auto; /* Centra l'immagine se è display: block e il suo contenitore (il link) è largo */
+}
+
+/* Stili per la Lista di Link (es. in link.html) */
+.main-content ul {
+    list-style: disc; /* Stile dei punti elenco */
+    padding-left: 20px; /* Spazio a sinistra per i punti elenco */
+    margin-top: 20px;
+}
+
+.main-content li {
+    margin-bottom: 10px; /* Spazio tra gli elementi della lista */
+}
+
+.main-content ul a {
+    color: #007bff; /* Colore link */
+    text-decoration: underline; /* Sottolineatura */
+}
+
+.main-content ul a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+
+/* Stili per il Footer */
+.site-footer {
+    width: 100%;
+    background-color: #eee; /* Colore di sfondo */
+    padding: 20px 0; /* Spazio interno sopra e sotto */
+    text-align: center; /* Centra il testo del footer */
+    margin-top: auto; /* Spinge il footer in fondo se il body è flex column */
+}
+
+.footer-text {
+    margin: 0; /* Rimuove margine predefinito del p */
+    color: #555;
+    font-size: 0.9em;
+    /* padding-top: 100px;  Spostato qui, verifica se è ancora necessario o regola */ 
+    padding: 10px 20px; /* Aggiunge padding interno */
+}
+
+/* Media Query di base per la reattività (esempio) */
+@media (max-width: 600px) {
+    .site-title {
+        font-size: 1.8em; /* Riduci dimensione titolo su schermi piccoli */
+    }
+
+    .navbar a {
+        margin: 0 8px; /* Riduci spazio tra i link */
+        font-size: 0.9em;
+    }
+
+    .main-content {
+        padding: 0 10px; /* Riduci padding interno su schermi piccoli */
+        margin: 10px auto; /* Riduci margini esterni */
+    }
+
+    .github-logo {
+        max-width: 100px; /* Riduci dimensione logo */
+    }
+
+    .footer-text {
+        font-size: 0.8em;
+        padding: 10px;
+    }
+}
