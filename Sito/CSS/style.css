@@ -228,16 +228,14 @@ body
 }
 .github
 {
-  width: 700px; /* L'altezza si adatterà automaticamente per mantenere le proporzioni */
+  width: 700px; 
 }
 
 .footer-text 
 {
-	/* Stili per il testo del footer */
-	/* margin, color, font-size, padding, ecc. */
 	height: 100px;
-	margin: 0; /* Rimuovi margini predefiniti */
-	padding-top: 100px; /* Spostato qui il padding-top, verifica se è ancora necessario con la nuova struttura */
+	margin: 0; 
+	padding-top: 100px; 
 	color: #000000;
 	text-align: center;
 
