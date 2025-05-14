@@ -189,7 +189,7 @@ body
 }
 .misurazione
 {
-	font-size: 20px;
+	font-size: 40px;
 	margin-top: 10px;
 	margin-left: 140px;
 	font-family: arial;
@@ -200,7 +200,7 @@ body
 }
 .comunicazione
 {
-	font-size: 20px;
+	font-size: 40px;
 	margin-top: 10px; 
 	margin-left: 150px;
 	font-family: arial;
@@ -211,7 +211,7 @@ body
 }
 .stampa
 {
-	font-size: 20px;
+	font-size: 40px;
 	margin-top: 10px;
 	margin-left: 140px; 
 	font-family: arial; 
@@ -228,7 +228,7 @@ body
 }
 .github
 {
-  width: 300px; /* L'altezza si adatterà automaticamente per mantenere le proporzioni */
+  width: 700px; /* L'altezza si adatterà automaticamente per mantenere le proporzioni */
 }
 
 .footer-text 
@@ -238,7 +238,7 @@ body
 	height: 100px;
 	margin: 0; /* Rimuovi margini predefiniti */
 	padding-top: 100px; /* Spostato qui il padding-top, verifica se è ancora necessario con la nuova struttura */
-	color: #ffffff;
+	color: #000000;
 	text-align: center;
 
 
@@ -246,4 +246,15 @@ body
 .divfooter
 {
 	background-color: #3279a8;
+	
+}
+.ultimo
+{
+	
+	float: center;
+	
+}
+p
+{
+	margin: 0;
 }
